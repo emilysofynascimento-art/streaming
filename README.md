@@ -1,3 +1,9 @@
-# streaming
-Projeto de Front-end
-Streaming Inspirado na Netflix,consta tela: "Quem está assistindo?" e tela de inicio com filmes e series. 
+# Tema do projeto
+Streaming
+## Estrutura do site
+
+## Área de atuação
+## Equipe que irá desenvolver
+Ana e Emily S.
+## Cargos
+A: gerente, E: programadora
