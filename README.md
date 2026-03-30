@@ -7,4 +7,4 @@ Entretenimento digital
 ## Equipe que irá desenvolver
 Ana e Emily S.
 ## Cargos
-A: gerente, E: programadora
+Ana: Gerente de Projetos, Emily S: Desenvolvedora Front-End
