@@ -1,46 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineFlix</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nova Play</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        /* PERFIL */
+        #perfil {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #perfil div {
+            cursor: pointer;
+        }
+
+        #icone {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: auto;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.25);
+        }
+
+        /* HOME */
+        #home {
+            display: none;
+            background-color: #080c14;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        #topo {
+            padding: 15px;
+        }
+
+        #banner {
+            background-color: #121923;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+        }
+
+        #banner img {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        #banner button {
+            background-color: #1d2a3e;
+            border: 1px solid #2f4a6d;
+            color: #e6efff;
+            padding: 10px 22px;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 12px;
+        }
+
+        #filmes {
+            padding: 20px;
+            background-color: rgba(18, 24, 38, 0.9);
+            border-radius: 16px;
+            margin: 20px;
+        }
+
+        #lista {
+            display: flex;
+            gap: 10px;
+        }
+
+        #filme {
+            width: 150px;
+            height: 200px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #rodape {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #3498db; /* Azul claro usando código HEX */
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="container">
-        <img id="fundo" src="/imagens/streaming.jpg" alt="fundo">
-        <div id="cabecalho">
-            <h1>Cineflix</h1>
-        </div>
-        <div id="menu">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Séries</a></li>
-            </ul>
-        </div>
+<!-- TELA DE PERFIL -->
+<div id="perfil">
+    <h1>Nova Play</h1>
 
-        <div id="inicio">
-            <h2>Streaming<br> </h2>
-            <p> filmes e séries</p>
+    <h2>Quem está assistindo?</h2>
 
-            <!-- <img src="imagens/logo-cine.png" alt="logo-cine" class="png"> -->
-            <img src="" alt="logo-cine" class="png">
+    <div onclick="entrar()">
+        <div id="icone"></div>
+        <p>alguém</p>
+    </div>
+</div>
 
-        </div>
+<!-- HOME -->
+<div id="home">
 
-        <div id="corpo">
-            <h3>Lançamentos</h3>
-            <p>filmes etc</p>
-        </div>
+    <div id="topo">
 
-        <div id="rodape">
-            <p> Emily S. & Ana D.</p>
+    <h1>Nova Play</h1>
+</div>
+
+    <div id="banner">
+        <h2>Filme em destaque</h2>
+        <button>Assistir</button>
+        <img src="/img/coraline.jpg" alt="Banner">
+        <p>Coraline</p>
+    </div>
+
+    <div id="filmes">
+        <h2>Populares</h2>
+
+        <div id="lista">
+           
+            <img src="/img/mats.jpg" alt="Matrix" style="width: 150px; height: 200px;">
+            <img src="/img/branq.jpg" alt="coraline" style="width: 150px; height: 200px;">
+            <img src="/img/tenet.jpg" alt="tenet" style="width: 150px; height: 200px;">
         </div>
     </div>
-</body>
 
+    <div id="rodape">
+        <p>emy s</p>
+        <p>ana d</p>
+        <p>Contato: novaplay@email.com</p>
+    </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+    function entrar() {
+        document.getElementById("perfil").style.display = "none";
+        document.getElementById("home").style.display = "block";
+    }
+</script>
+
+</body>
 </html>
