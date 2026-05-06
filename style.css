@@ -1,80 +1,74 @@
-#container {
-    width: 100%;
-    position: relative;
-    font-family: sans-serif;
-    background-color: #252a30;
-    color: white;
-}
-
-#fundo {
-    opacity: 50%;
-    position: absolute;
-}
-
+/* estilo basico para o fundo sempre ser preto */
 body {
-    margin: 0;
-    padding: 0;
-}
-
-#cabecalho {
-    position: relative;
-    background-color: #e21919;
-    padding: 20px;
-    text-align: center;
-}
-#menu{
-    text-align: center;
-    color: #fff;
-
-}
-#inicio {
-    position: relative;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #222;
-    text-align: center;
-}
-
-
-
-
-
-#corpo {
-    position: relative;
-    padding: 50px;
-    text-align: center;
-}
-
-
-#rodape {
-    position: relative;
     background-color: #000;
-    padding: 20px;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
     text-align: center;
-    font-size: 14px;
-    color: #666;
+}
+
+/* Logo que brilhar */
+#logo {
+    font-size: 50px;
+    color: #00d9ff;
+    text-shadow: 0 0 15px #00d9ff;
+    margin-top: 100px;
+}
+
+#logo-pequena {
+    font-size: 25px;
+    color: #00d9ff;
+    text-shadow: 0 0 10px #00d9ff;
+    padding: 20px;
+    text-align: left; /* deixa o nome no cantinho na tela de filmes */
+}
+
+
+#avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #0a0a2e;
+    border: 3px solid #00d9ff;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px #00d9ff;
+    transition: 0.3s;
+}
+
+#avatar:hover {
+    transform: scale(1.1); /* Aumenta um pouco quando passa o mouse */
+}
+
+/* Grade de Filmes */
+#grade {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 
 
+#filme {
+    width: 220px;
+    height: 125px;
+    background-color: #111;
+    border: 1px solid #0056b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
 
-
-
-/* .png {
-    width: 250px;       
-    height: auto;
-    border-radius: 15px;
-    margin-top: 20px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); 
-} */
-
-
-/* #cabecalho a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 15px;
-} */
+#filme:hover {
+    border-color: #00d9ff;
+    box-shadow: 0 0 10px #00d9ff;
+}
+/* Isso faz com que toda imagem dentro de um 'div filme' se ajuste direitinho */
+#filme img {
+    width: 100%;       /* Largura total do quadrado */
+    height: 100%;      /* Altura total do quadrado */
+    border-radius: 5px; /* Arredonda as pontas da imagem também */
+    object-fit: cover; /* Isso faz a imagem preencher o espaço sem ficar esticada feio */
+}
